@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Notepad Replica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .notepad {
+            width: 600px;
+            margin: 20px auto;
+            border: 1px solid #999999;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-bar {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-bottom: 1px solid #999999;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-bar ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .menu-bar ul li a {
+            color: #333333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-bar ul li a:hover {
+            background-color: #cccccc;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .textarea {
+            width: 100%;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid #999999;
+            background-color: #ffffff;
+            resize: none;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="notepad">
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">File</a></li>
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Format</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <textarea class="textarea"></textarea>
+        </div>
+        <div class="footer">
+            &copy; 2024 Microsoft Corporation. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
+
